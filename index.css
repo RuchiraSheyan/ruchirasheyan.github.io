@@ -1,0 +1,31 @@
+#header-jumbotron {
+    background-image: url(assets/images/road.jpg);
+    color: white;
+    position: relative;
+}
+
+.profile-pic {
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+
+.centered-element {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}  
+
+.other-centered-element {
+    /* height: 100px;
+    width: 100px; */
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    top: 50%;
+    /* margin-top: -50px; */
+}
