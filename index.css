@@ -1,31 +1,74 @@
 #header-jumbotron {
-    background-image: url(assets/images/road.jpg);
-    color: white;
-    position: relative;
+  background-image: url(assets/images/road.jpg);
+  color: white;
+  position: relative;
 }
 
 .profile-pic {
-    position: relative;
-    width: 150px;
-    height: auto;
+  z-index: 1;
+  position: relative;
+  width: 150px;
+  height: auto;
 }
 
 .centered-element {
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    top: 50%;
-    margin-top: -50px;
-}  
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+}
 
 .other-centered-element {
-    /* height: 100px;
+  /* height: 100px;
     width: 100px; */
-    position: absolute;
-    left: 50%;
-    margin-left: -90px;
-    top: 50%;
-    /* margin-top: -50px; */
+  position: absolute;
+  left: 50%;
+  margin-left: -90px;
+  top: 50%;
+  /* margin-top: -50px; */
+}
+
+#about {
+  z-index: 0;
+  background-image: linear-gradient(to right, #fa5b2f, yellow);
+  position: relative;
+  margin-top: -30px;
+  /* display: block; */
+  font-size: larger;
+  /* white-space: pre; */
+}
+
+.section2 {
+  background-color: black;
+  margin-top: -15px;
+  display: flex;
+  /* flex-direction: row; */
+  position: absolute;
+  z-index: 0;
+}
+
+.project-title {
+  position: relative;
+  z-index: 3;
+  margin-left: 180px;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  /* position: absolute; */
+  overflow: hidden;
+  max-width: 576px;
+}
+
+.project-pics {
+  position: relative;
+  z-index: 2;
+  margin-top: -30px;
+  height: 400px;
+  width: auto;
+  /* overflow: hidden; */
 }
