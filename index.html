@@ -6,10 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 
   <title>Ruchira Perera</title>
 </head>
@@ -22,29 +28,137 @@
       <p class="other-centered-element" style="font-size: 20px;">Welcome to my portfolio</p>
     </div>
   </header>
-  
-    <section class="content-section" id="about">
-      <p>&nbsp;Hello am Ruchira. Am a software developer. I build mobile apps and also web apps. This is my portfolio.</p>
-    </section>
-    <div class="content-section section2">
+
+  <section class="content-section" id="about">
+    <p>&nbsp;Hello am Ruchira. Am a software developer. I build mobile apps and also web apps. This is my portfolio.</p>
+  </section>
+
+  <div class="section2">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+        <h5 class="project-title" style="margin-left: 40px;">Weather app</h5>
+        <a href="#weatherAppLink" class="fancybox" rel="ligthbox">
+          <img src="assets/images/projects/weather_app/weather1.jpg" class="zoom img-fluid " alt="">
+
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+        <h5 class="project-title">Money transfer app</h5>
+        <a href="#moneyTransferAppLink" class="fancybox" rel="ligthbox">
+          <img src="assets/images/projects/money_transfer_app/money_transfer1.jpg" class="zoom img-fluid" alt="">
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+        <h5 class="project-title">CBM Calculator</h5>
+        <a href="#cbmCalculatorLink" class="fancybox" rel="ligthbox">
+          <img src="assets/images/projects/cbm_calculator/cbm_cal1.png" class="zoom img-fluid " alt="">
+        </a>
+      </div>
+
+      <!-- <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+        <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          class="fancybox" rel="ligthbox">
+          <img
+            src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="zoom img-fluid " alt="">
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+        <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          class="fancybox" rel="ligthbox">
+          <img
+            src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            class="zoom img-fluid " alt="">
+        </a>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="weatherAppModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h2>Weather app</h2>
       <div class="row">
-        <div class="col-md-4 col-sm-6 border border-light container">
-          <h5 class="project-title">Weather app</h5>
-          <img src="assets/images/projects/weather_app/weather1.jpg" alt="weather-app-image" class="project-pics">
-          <img src="assets/images/projects/weather_app/weather2.jpg" alt="weather-app-image" class="project-pics">
-        </div>
-        <div class="col-md-4 col-sm-6 border border-light container">
-          <h5 class="project-title">CBM Calculator</h5>
-          <img src="assets/images/projects/cbm_calculator/cbm_cal1.png" alt="cbm-calculator-image" class="project-pics">
-        </div>
-        <div class="col-md-4 col-sm-6 border border-light container">
-          <h5 class="project-title">Money transfer app</h5>
-          <img src="assets/images/projects/money_transfer_app/money_transfer1.jpg" alt="cbm-calculator-image" class="project-pics">
-          <img src="assets/images/projects/money_transfer_app/money_transfer2.jpg" alt="cbm-calculator-image" class="project-pics">
-        </div>
+        <img src="assets/images/projects/weather_app/weather1.jpg" alt="" class="modal-img">
+        <img src="assets/images/projects/weather_app/weather2.jpg" alt="" class="modal-img">
+        <img src="assets/images/projects/weather_app/weather3.jpg" alt="" class="modal-img">
+        <p>Android application. <br> Made with Flutter. <br> Using API of The Weather Company (IBM)</p><span class="close" id="closeWeatherAppModal">&times;</span>
       </div>
     </div>
-  
+  </div>
+
+  <div id="moneyTransferAppModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="row">
+        <img src="assets/images/projects/money_transfer_app/money_transfer1.jpg" alt="">
+        <img src="assets/images/projects/money_transfer_app/money_transfer2.jpg" alt="">
+        <p>Money transfer app Modal..</p><span class="close" id="closeMoneyTransferAppModal">&times;</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="cbmCalculatorModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="row">
+        <p>CBM Calculator Modal..</p><span class="close" id="closeCbmCalculatorModal">&times;</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var modal = document.getElementById("weatherAppModal");
+    var modal = document.getElementById("moneyTransferAppModal");
+    var modal = document.getElementById("cbmCalculatorModal");
+    // var span = document.getElementsByClassName("close")[0];
+    var span;
+    var linkName;
+    var modelName;
+    $('a[href^="#"]').on('click', function (event) {
+
+      linkName = $(this).attr('href');
+      // alert(linkName);
+      switch (linkName) {
+        case "#weatherAppLink":
+          modelName = $('#weatherAppModal');
+          modelName.css("display", "block");
+          span = document.getElementById("closeWeatherAppModal");
+          span.onclick = function () {
+            modelName.css("display", "none");
+          }
+          break;
+        case "#moneyTransferAppLink":
+          modelName = $('#moneyTransferAppModal');
+          modelName.css("display", "block");
+          span = document.getElementById("closeMoneyTransferAppModal");
+          span.onclick = function () {
+            modelName.css("display", "none");
+          }
+          break;
+        case "#cbmCalculatorLink":
+          modelName = $('#cbmCalculatorModal');
+          modelName.css("display", "block");
+          span = document.getElementById("closeCbmCalculatorModal");
+          span.onclick = function () {
+            modelName.css("display", "none");
+          }
+          break;
+      }
+
+    });
+
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modelName) {
+        // modal.style.display = "none";
+        modelName.css("display", "none");
+      }
+    }
+  </script>
 
 
   <!-- Optional JavaScript -->
