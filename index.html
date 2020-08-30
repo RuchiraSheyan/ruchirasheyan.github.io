@@ -84,7 +84,8 @@
         <img src="assets/images/projects/weather_app/weather1.jpg" alt="" class="modal-img">
         <img src="assets/images/projects/weather_app/weather2.jpg" alt="" class="modal-img">
         <img src="assets/images/projects/weather_app/weather3.jpg" alt="" class="modal-img">
-        <p>Android application. <br> Made with Flutter. <br> Using API of The Weather Company (IBM)</p><span class="close" id="closeWeatherAppModal">&times;</span>
+        <p>Android application. <br> Made with Flutter. <br> Using API of The Weather Company (IBM)</p><span
+          class="close" id="closeWeatherAppModal">&times;</span>
       </div>
     </div>
   </div>
@@ -92,10 +93,11 @@
   <div id="moneyTransferAppModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
+      <h2>Money transfer app</h2>
       <div class="row">
-        <img src="assets/images/projects/money_transfer_app/money_transfer1.jpg" alt="">
-        <img src="assets/images/projects/money_transfer_app/money_transfer2.jpg" alt="">
-        <p>Money transfer app Modal..</p><span class="close" id="closeMoneyTransferAppModal">&times;</span>
+        <img src="assets/images/projects/money_transfer_app/money_transfer1.jpg" alt="" class="modal-img">
+        <img src="assets/images/projects/money_transfer_app/money_transfer2.jpg" alt="" class="modal-img">
+        <p>Android application. <br> Made with Flutter. On going project. Many changes to be done.</p><span class="close" id="closeMoneyTransferAppModal">&times;</span>
       </div>
     </div>
   </div>
@@ -110,40 +112,55 @@
   </div>
 
   <script>
-    var modal = document.getElementById("weatherAppModal");
-    var modal = document.getElementById("moneyTransferAppModal");
-    var modal = document.getElementById("cbmCalculatorModal");
+    // var modal = document.getElementById("weatherAppModal");
+    // var modal = document.getElementById("moneyTransferAppModal");
+    // var modal = document.getElementById("cbmCalculatorModal");
     // var span = document.getElementsByClassName("close")[0];
+    var modal;
     var span;
     var linkName;
     var modelName;
     $('a[href^="#"]').on('click', function (event) {
 
       linkName = $(this).attr('href');
-      // alert(linkName);
       switch (linkName) {
         case "#weatherAppLink":
-          modelName = $('#weatherAppModal');
-          modelName.css("display", "block");
+          modal = document.getElementById("weatherAppModal");
+          modal.style.display = "block";
           span = document.getElementById("closeWeatherAppModal");
           span.onclick = function () {
-            modelName.css("display", "none");
+            modal.style.display = "none";
+          }
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
           }
           break;
         case "#moneyTransferAppLink":
-          modelName = $('#moneyTransferAppModal');
-          modelName.css("display", "block");
+          modal = document.getElementById("moneyTransferAppModal");
+          modal.style.display = "block";
           span = document.getElementById("closeMoneyTransferAppModal");
           span.onclick = function () {
-            modelName.css("display", "none");
+            modal.style.display = "none";
+          }
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
           }
           break;
         case "#cbmCalculatorLink":
-          modelName = $('#cbmCalculatorModal');
-          modelName.css("display", "block");
+          modal = document.getElementById("moneyTransferAppModal");
+          modal.style.display = "block";
           span = document.getElementById("closeCbmCalculatorModal");
           span.onclick = function () {
-            modelName.css("display", "none");
+            modal.style.display = "none";
+          }
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
           }
           break;
       }
