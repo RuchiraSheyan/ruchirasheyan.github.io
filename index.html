@@ -81,11 +81,15 @@
     <div class="modal-content">
       <h2>Weather app</h2>
       <div class="row">
-        <img src="assets/images/projects/weather_app/weather1.jpg" alt="" class="modal-img">
-        <img src="assets/images/projects/weather_app/weather2.jpg" alt="" class="modal-img">
-        <img src="assets/images/projects/weather_app/weather3.jpg" alt="" class="modal-img">
-        <p>Android application. <br> Made with Flutter. <br> Using API of The Weather Company (IBM)</p><span
-          class="close" id="closeWeatherAppModal">&times;</span>
+        <div class="col-lg-8 colsm col-7">
+          <img src="assets/images/projects/weather_app/weather1.jpg" alt="" class="modal-img">
+          <img src="assets/images/projects/weather_app/weather2.jpg" alt="" class="modal-img">
+          <img src="assets/images/projects/weather_app/weather3.jpg" alt="" class="modal-img">
+        </div>
+        <div class="col-lg-4 col-3">
+          <p>Android application. <br> Made with Flutter. <br> Using API of The Weather Company (IBM)</p><span
+            class="close" id="closeWeatherAppModal">&times;</span>
+        </div>
       </div>
     </div>
   </div>
@@ -95,11 +99,16 @@
     <div class="modal-content">
       <h2>Money transfer app</h2>
       <div class="row">
+        <!-- <div class="col-lg-6 col-md-6 col-sm-2"> -->
         <img src="assets/images/projects/money_transfer_app/money_transfer1.jpg" alt="" class="modal-img">
         <img src="assets/images/projects/money_transfer_app/money_transfer2.jpg" alt="" class="modal-img">
-        <p>Android application. <br> Made with Flutter. On going project. Many changes to be done.</p><span class="close" id="closeMoneyTransferAppModal">&times;</span>
+        <!-- </div> -->
+        <!-- <div class="col-lg-3 col-md-3 col-sm-1"> -->
+        <p>Android application. <br> Made with Flutter. On going project. Many changes to be done.</p><span
+          class="close" id="closeMoneyTransferAppModal">&times;</span>
       </div>
     </div>
+  </div>
   </div>
 
   <div id="cbmCalculatorModal" class="modal">
@@ -112,10 +121,6 @@
   </div>
 
   <script>
-    // var modal = document.getElementById("weatherAppModal");
-    // var modal = document.getElementById("moneyTransferAppModal");
-    // var modal = document.getElementById("cbmCalculatorModal");
-    // var span = document.getElementsByClassName("close")[0];
     var modal;
     var span;
     var linkName;
