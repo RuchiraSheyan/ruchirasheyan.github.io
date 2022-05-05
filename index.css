@@ -1,0 +1,24 @@
+.profile-pic {
+    z-index: 1;
+    position: relative;
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+body {
+    background-color: black;    
+}
+
+.content {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h3 {
+    color: white;
+}
+
+img {
+    height: 500px;
+}
