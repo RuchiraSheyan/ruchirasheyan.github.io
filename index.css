@@ -15,12 +15,16 @@ body {
     margin-right: 10px;
 }
 
-h3 {
+h4 {
+    color: white;
+}
+
+.project-description {
     color: white;
 }
 
 img {
-    /* height: 500px; */
+    height: 500px;
 }
 
 .jumbotron {
