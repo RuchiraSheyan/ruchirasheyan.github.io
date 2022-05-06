@@ -20,5 +20,9 @@ h3 {
 }
 
 img {
-    height: 500px;
+    /* height: 500px; */
+}
+
+.jumbotron {
+    background-image: url("assets/images/road.jpg");
 }
