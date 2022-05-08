@@ -15,10 +15,23 @@ body {
     margin-right: 10px;
 }
 
-h3 {
+h4 {
     color: white;
 }
 
-img {
+.project-description {
+    color: white;
+}
+
+.mobile_project_images {
     height: 500px;
+}
+
+.web_project_images {
+    height: 400px;
+    width: 800px;
+}
+
+.jumbotron {
+    background-image: url("assets/images/road.jpg");
 }
