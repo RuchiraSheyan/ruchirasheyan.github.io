@@ -39,3 +39,11 @@ h5 {
 .jumbotron {
     background-image: url("assets/images/road.jpg");
 }
+
+.nav-tabs .nav-item .nav-link {
+    color: white;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: black;
+  }
