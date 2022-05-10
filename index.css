@@ -32,8 +32,14 @@ h5 {
 }
 
 .web_project_images {
-    height: 400px;
-    width: 800px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.other_project_images {
+    width: 400px;
+    height: auto;
 }
 
 .jumbotron {
