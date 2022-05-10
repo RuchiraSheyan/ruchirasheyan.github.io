@@ -37,6 +37,11 @@ h5 {
     padding: 10px;
 }
 
+.web_project_images_with_caption {
+    height: auto;
+    width: 100%;
+}
+
 .other_project_images {
     width: 400px;
     height: auto;
