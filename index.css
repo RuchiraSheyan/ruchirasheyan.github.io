@@ -19,6 +19,10 @@ h4 {
     color: white;
 }
 
+h5 {
+    color: white;
+}
+
 .project-description {
     color: white;
 }
@@ -28,10 +32,29 @@ h4 {
 }
 
 .web_project_images {
-    height: 400px;
-    width: 800px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.web_project_images_with_caption {
+    height: auto;
+    width: 100%;
+}
+
+.other_project_images {
+    width: 400px;
+    height: auto;
 }
 
 .jumbotron {
     background-image: url("assets/images/road.jpg");
 }
+
+.nav-tabs .nav-item .nav-link {
+    color: white;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: black;
+  }
